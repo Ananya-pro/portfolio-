@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  background-color: #fdfaf3;
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Header Styling */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fdfaf3;
+  z-index: 1000;
+}
+
+.title {
+  margin: 0px;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.title:hover {
+  color: #ff4d00;
+  transition: all 0.3s;
+}
+
+.name {
+  border-right: 2px solid #000;
+  padding: 1rem;
+}
+
+.resume-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  border-left: 2px solid #000;
+  padding: 1rem;
+}
+
+/* Main Component Styling */
+
+.main-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.left-component {
+  border-right: 2px solid #000;
+  padding: 1rem;
+  height: 100%;
+  width: 60%;
+}
+
+.right-component {
+  width: 40%;
+  min-height: 100vh;
+  background-image: url("./assests/img/pic.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.chip-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.chips {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.35rem 1rem;
+  text-align: center;
+  border: 2px solid #000;
+  min-width: 100px;
+  border-radius: 4rem;
+  cursor: pointer;
+}
+
+.chips:hover {
+  background-color: #000;
+  color: #fdfaf3;
+  transition: all 0.3s;
+}
+
+.main-text {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.para,
+.list {
+  font-size: 24px;
+}
+
+.my-info {
+  border-bottom: 2px solid #000;
+  padding: 1.5rem;
+  margin-top: 4rem;
+}
+
+.education {
+  border-bottom: 2px solid #000;
+  padding: 1.5rem;
+}
+
+.social-component {
+  border-bottom: 2px solid #000;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socials-flex {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.social-img {
+  border: 2px solid #000;
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #ff4d00;
+  text-decoration: underline;
+  transition: all 0.1s;
+}
+
+@media only screen and (max-width: 1100px) {
+  .right-component,
+  .left-component {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .main-component {
+    flex-direction: column-reverse;
+  }
+  .right-component,
+  .left-component {
+    width: 100%;
+  }
+
+  .chips {
+    font-size: 16px;
+    min-width: 0px !important;
+  }
+
+  .my-info {
+    margin-top: 0rem;
+  }
+  .socials-flex {
+    gap: 1rem;
+  }
+
+  .name,
+  .resume-div {
+    border: none;
+  }
+
+  .resume-div h1 {
+    display: none;
+  }
+
+  .para,
+  .list {
+    font-size: 20px;
+  }
+
+  .my-info,
+  .social-component,
+  .education {
+    padding: 1rem;
+  }
+}
+
